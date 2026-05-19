@@ -68,12 +68,22 @@ Aqui vizualizo os endereços e ip envolvidos . O Source addres indentifica a má
 <img width="543" height="371" alt="image" src="https://github.com/user-attachments/assets/2a169e20-ecbf-4528-b472-56a18c3ec757" />
 A source Port (47624 - porta privada) é uma porta aleatório aberto pelo host enviar o pedido, enquanto a Destination Port (80) mostra o momento em que os dados do beaconing são enviados e recebidos, confirmando comunicação  ativa e bem sucedida entre o malware simulado e o servidor.
 
-
-
 # Análise dados Hexadecimal
 <img width="772" height="152" alt="image" src="https://github.com/user-attachments/assets/7ed1b2c0-6d37-40db-88c0-584ef9bf7030" />
 
 Nessa sessão o wireshark traduz os dados brutos e traduz para texto legível, onde consigo confirmar que o destino era o site example.com o qual o meu script estava enviando.
+
+Next sequence number é fundamental para o controle de fluxo. Ele indica a ordem dos dados e confirma que 75 bytes de informação foram enviados com sucesso, aguardando o próximo segmento da conversa.
+
+As flags[PSH,ACK] indicam que os dados do beacon foram enviados imediatamente para aplicação, garantindo que o "sinal de vida" do malware chegue rápido ao destino.
+
+# Hierarchy e Conversation
+<img width="715" height="164" alt="image" src="https://github.com/user-attachments/assets/e9abc385-dac6-418f-9268-7c697dba0a91" />
+
+A hierarquia mostra os protoclos que foram usados na conversa e a % de tráfego real, usamos para enterder a composição do tráfego capturado. Vizualizamos que o protocolo HTTP representa 12.2% de todos os pacotes
+
+
+
 
 
 

@@ -32,6 +32,17 @@ Com a utilização do filtro "HTTP" é possível isolar comunicações, e vizual
 Também é possível notas as requisições GET e a resposta do site (200 OK), acontecem em um intervalo de ocmunicação é sempre o mesmo.
 
 # Isolamento de domínio
+<img width="771" height="135" alt="Sem título" src="https://github.com/user-attachments/assets/db9805f6-f172-4e8b-90f0-d88bf83abde2" />
+
+Utilizei o filtro host.contais para filtrar apenas o tráfego destinado a esse domínio. É possível ter uma melhor visuazlização do intervalo de tempo , pois o filtro isolou o alvo exato sem interferência de outros sites.
+
+# Requisições
+<img width="779" height="125" alt="image" src="https://github.com/user-attachments/assets/c0fb8c54-5151-4375-b87b-28203cf7ed1b" />
+Filtro utilizado para isolar apenas as requisições de entrada, eliminando as respostas doservidor e focando exclusivamente nas ações enviadas pela máquina local, facilicanto a análise.
+
+# Análise do User Agent
+
+
 
 
 

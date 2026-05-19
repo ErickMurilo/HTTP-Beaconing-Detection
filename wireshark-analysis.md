@@ -1,1 +1,20 @@
+Objetivo 
 
+Simular comportamento de HTTP Beaconing e analisar padrões de comunicação utilizando o Wireshark.
+
+Ambiente 
+
+- Máquina virtual Kali Linux
+- Host Windons 
+- Rede doméstica/laboratório
+- Comunicação HTTP simulada para example.com
+- Captura e análise realizadas no Wireshark
+
+Execução da simulação
+
+- Loop com curl
+- Requisição a cada 5 segundos
+- Geração de tráfego
+- Captura de pacotes
+
+<img width="778" height="96" alt="image" src="https://github.com/user-attachments/assets/d7673bd0-3594-4dda-b5c1-4c553dfac56b" />

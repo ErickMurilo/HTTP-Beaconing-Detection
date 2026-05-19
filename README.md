@@ -1,4 +1,4 @@
-# a-HTTP-Beaconing
+# HTTP-Beaconing
 
 Projeto de simulação de tráfego HTTP com comportamento de beaconing utilizando comandos while e curl em ambiente linux.
 

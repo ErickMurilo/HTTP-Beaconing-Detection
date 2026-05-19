@@ -36,11 +36,23 @@ Também é possível notas as requisições GET e a resposta do site (200 OK), a
 
 Utilizei o filtro host.contais para filtrar apenas o tráfego destinado a esse domínio. É possível ter uma melhor visuazlização do intervalo de tempo , pois o filtro isolou o alvo exato sem interferência de outros sites.
 
-# Requisições
+# Filtro utilizado para isolar requisições
 <img width="779" height="125" alt="image" src="https://github.com/user-attachments/assets/c0fb8c54-5151-4375-b87b-28203cf7ed1b" />
 Filtro utilizado para isolar apenas as requisições de entrada, eliminando as respostas doservidor e focando exclusivamente nas ações enviadas pela máquina local, facilicanto a análise.
 
-# Análise do User Agent
+# Análise do handshake TCP
+<img width="779" height="116" alt="image" src="https://github.com/user-attachments/assets/0da3d648-4f04-4ff7-bf2d-d128aa1027ef" />
+
+Utilizando o filtro de endereço de origem (IPV6.SRC - APPLY AS FILTER) é possível isolar toda atividade vindo da máquina de origem. Permite visualização não somente do pedido HTTP , mas também do TCP handshake, que acontece logo antes.
+É possível ver o ciclo completo da conexão : o computador pede para se comunicar (SYN), o site aceita (ACK), os dados são enviados (GET) e a conexão é encerrada (FIN).
+
+# Filtro para vizualizar solicitações
+<img width="774" height="110" alt="image" src="https://github.com/user-attachments/assets/563a4dda-7737-4f07-958a-016c37737a1c" />
+<img width="775" height="117" alt="image" src="https://github.com/user-attachments/assets/f4381d17-dc63-4115-b9a5-eef3348ddc9f" />
+
+
+
+
 
 
 

@@ -80,7 +80,29 @@ As flags[PSH,ACK] indicam que os dados do beacon foram enviados imediatamente pa
 # Hierarchy e Conversation
 <img width="715" height="164" alt="image" src="https://github.com/user-attachments/assets/e9abc385-dac6-418f-9268-7c697dba0a91" />
 
-A hierarquia mostra os protoclos que foram usados na conversa e a % de tráfego real, usamos para enterder a composição do tráfego capturado. Vizualizamos que o protocolo HTTP representa 12.2% de todos os pacotes
+A hierarquia mostra os protoclos que foram usados na conversa e a % de tráfego real, usamos para enterder a composição do tráfego capturado. Vizualizamos que o protocolo HTTP representa 12.2% de todos os pacotes.
+
+<img width="768" height="130" alt="image" src="https://github.com/user-attachments/assets/7f21499e-9f7c-4929-bb3f-7a997cb06ea0" />
+
+Em conversations identifiquei o fluxo de comunicação entre os dispositivos.As duas primeiras linhas mostram um volume desproporcional de pacotes enviados para endereços específicos em comparação ao restante da rede, permite identificar o endereço ip do dispositivo infectado e do servidor de destino.
+
+A coluna Bytes mostra que o valor vaixo (15/16 kb) em mais de 100 pacotes, isso indica um comportamento de beaconing (check -in), onde o malware envia sinais frequentes , para manter a conexão ativo com o servidor, sem despertar suspeita por alto consumo de banda.
+
+# IOCS (Indicators of Compromise)
+- Requisições HTTP periódicas
+- Intervalo fixo de 5 segundos
+- User -Agent : curl/ 8.x
+- Comunicação persistente com example.com
+- Pequeno volume recorrente de dados
+- Reutilização de portas Tcp
+- Múltiplas conexões HTTP automatizada
+
+# Conclusão
+O ataque se caracteriza beaconing pois o beaconing é uma conexão periódica da máquina infectada com o servidor esperando um comando.
+
+# Mitigações
+-bloqueio de ip/domínio
+-Automatizar alertas de siem
 
 
 

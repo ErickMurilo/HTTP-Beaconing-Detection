@@ -1,4 +1,4 @@
-#Objetivo 
+# Objetivo 
 
 Simular comportamento de HTTP Beaconing e analisar padrões de comunicação utilizando o Wireshark.
 
@@ -10,7 +10,7 @@ Ambiente
 - Comunicação HTTP simulada para example.com
 - Captura e análise realizadas no Wireshark
 
-#Execução da simulação
+# Execução da simulação
 
 - Loop com curl
 - Requisição a cada 5 segundos

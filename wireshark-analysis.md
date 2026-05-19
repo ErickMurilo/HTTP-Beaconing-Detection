@@ -60,10 +60,20 @@ O wireshark marca em vermelho para avisar que a porta 4090 já foi usada antes, 
 
 Detalhes da camada de aplicação HTTP. Ao analisar o campo User-Agent , identificamos a assinatura curl/8.17.0. Revelando que a conexão está sendo feita por uma ferramenta de automação via linha de comando, e não por um navegador comum,o  que reforça a evidência de um script beaconing.
 
+# Fluxo de comunicação
+<img width="436" height="184" alt="image" src="https://github.com/user-attachments/assets/eebaa012-6137-4c45-b002-10f99d82aad1" />
+
+Aqui vizualizo os endereços e ip envolvidos . O Source addres indentifica a máquina infectada e o Destination Addres aponta para o servidor externo.
+
+<img width="543" height="371" alt="image" src="https://github.com/user-attachments/assets/2a169e20-ecbf-4528-b472-56a18c3ec757" />
+A source Port (47624 - porta privada) é uma porta aleatório aberto pelo host enviar o pedido, enquanto a Destination Port (80) mostra o momento em que os dados do beaconing são enviados e recebidos, confirmando comunicação  ativa e bem sucedida entre o malware simulado e o servidor.
+
+
+
 # Análise dados Hexadecimal
 <img width="772" height="152" alt="image" src="https://github.com/user-attachments/assets/7ed1b2c0-6d37-40db-88c0-584ef9bf7030" />
 
-
+Nessa sessão o wireshark traduz os dados brutos e traduz para texto legível, onde consigo confirmar que o destino era o site example.com o qual o meu script estava enviando.
 
 
 

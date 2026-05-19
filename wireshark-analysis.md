@@ -24,6 +24,7 @@ while true; do curl http://example.com; sleep 5; done
 Simulação de comunicação entre um computador infectado e um invasor: é um comando simples que irá fazer o computador"chamar" um site automaticamente a cada 5 segundos.Isso simula o comportamento do Beaconing, informando que está esperando comando.
 
 # Análise e evidências
+
 # Identificação do tráfego HTTP
 
 <img width="768" height="168" alt="image" src="https://github.com/user-attachments/assets/b3c749d9-a229-4c9b-a856-83db06f6b717" />
@@ -47,12 +48,20 @@ Utilizando o filtro de endereço de origem (IPV6.SRC - APPLY AS FILTER) é poss�
 É possível ver o ciclo completo da conexão : o computador pede para se comunicar (SYN), o site aceita (ACK), os dados são enviados (GET) e a conexão é encerrada (FIN).
 
 # Filtro para vizualizar solicitações
-<img width="774" height="110" alt="image" src="https://github.com/user-attachments/assets/563a4dda-7737-4f07-958a-016c37737a1c" />
+<img width="620" height="126" alt="image" src="https://github.com/user-attachments/assets/838b93f4-1070-4610-9437-38f2b79b08e1" />
 <img width="775" height="117" alt="image" src="https://github.com/user-attachments/assets/f4381d17-dc63-4115-b9a5-eef3348ddc9f" />
 
+Utilizando esse filtro isolei os pacote s de sincronização que dão início a conexão. Note que cada batimento do beacon o computador abre uma nova conversa técnica com o servidor , as mensagem em vermelho [TCP Port numbers reused] ocorrem porque o script faz conexões tão rápidas e frequentes que o sistema operacional acaba reutilizando portas que foram fechados recentemente , comportamento comum em automação de rede.
 
+O wireshark marca em vermelho para avisar que a porta 4090 já foi usada antes, como meu script while true roda sem parar , ele esgota as portas novas e começa a repetir as antigas.
 
+# Análise do User - Agent
+<img width="484" height="172" alt="image" src="https://github.com/user-attachments/assets/d4c570e6-94f2-41d7-a59a-3f4a1761e409" />
 
+Detalhes da camada de aplicação HTTP. Ao analisar o campo User-Agent , identificamos a assinatura curl/8.17.0. Revelando que a conexão está sendo feita por uma ferramenta de automação via linha de comando, e não por um navegador comum,o  que reforça a evidência de um script beaconing.
+
+# Análise dados Hexadecimal
+<img width="772" height="152" alt="image" src="https://github.com/user-attachments/assets/7ed1b2c0-6d37-40db-88c0-584ef9bf7030" />
 
 
 

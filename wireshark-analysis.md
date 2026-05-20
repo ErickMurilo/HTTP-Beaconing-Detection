@@ -110,3 +110,4 @@ O ataque se caracteriza beaconing pois o beaconing é uma conexão periódica da
 
 
 
+

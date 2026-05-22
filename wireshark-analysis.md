@@ -15,7 +15,7 @@
 - Geração de tráfego
 - Captura de pacotes
 
-<img width="300" height="31" alt="Comando beaconing" src="https://github.com/user-attachments/assets/a218269c-6608-45a2-87f3-1274a3a39cff" />
+<img width="300" height="41" alt="Comando beaconing" src="https://github.com/user-attachments/assets/a218269c-6608-45a2-87f3-1274a3a39cff" />
 
 while true; do curl http://example.com; sleep 5; done
 

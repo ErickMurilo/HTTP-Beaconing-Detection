@@ -25,7 +25,8 @@ Simulação de comunicação entre um computador infectado e um invasor: é um c
 
 ## Identificação do tráfego HTTP
 
-<img width="768" height="168" alt="image" src="https://github.com/user-attachments/assets/b3c749d9-a229-4c9b-a856-83db06f6b717" />
+<img width="936" height="206" alt="image" src="https://github.com/user-attachments/assets/b0dbe042-8e6c-4f52-8c52-062e6f8b1857" />
+
 
 Com a utilização do filtro "HTTP" é possível isolar comunicações, e vizualizar que as requisições GET acontecem em intervalos fixos (5s). Esse é um indício de que o tráfego é gerado por uma máquina.
 Também é possível notas as requisições GET e a resposta do site (200 OK), acontecem em um intervalo de ocmunicação é sempre o mesmo.

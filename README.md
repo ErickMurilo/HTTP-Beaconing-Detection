@@ -18,3 +18,7 @@ Ferramentas utilizadas
 - Wireshark
 - curl
 - Linux Terminal
+
+## Objetivo 
+
+Simular comportamento de HTTP Beaconing e analisar padrões de comunicação utilizando o Wireshark.

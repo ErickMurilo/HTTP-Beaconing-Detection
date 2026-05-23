@@ -23,8 +23,10 @@ Ferramentas utilizadas
 
 Simular comportamento de HTTP Beaconing e analisar padrões de comunicação utilizando o Wireshark.
 
-## 📁 Análise Detalhada de Tráfego
+## Análise Detalhada de Tráfego
 
 O relatório completo contendo a análise dos pacotes, filtros utilizados e identificação dos beacons pode ser acessado no link abaixo:
 
-👉 [Acesse o Relatório de Análise no Wireshark](wireshark-analysis.md)
+[Acesse o Relatório de Análise no Wireshark](wireshark-analysis.md)
+
+[Clique aqui para baixar o arquivo de captura original (PCAPNG)](http-beaconing-traffic.pcapng)

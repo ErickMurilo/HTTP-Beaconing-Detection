@@ -1,6 +1,6 @@
 # Análise de Tráfego: Detecção de HTTP Beaconing
 
-Projeto de simulação de tráfego HTTP com comportamento de beaconing utilizando comandos while e curl em ambiente linux.
+Projeto de simulação de tráfego HTTP com comportamento de beaconing utilizando `curl` e análise de pacotes no Wireshark em ambiente laboratorial controlado.
 
 O tráfego gerado foi capturado e analisado no wireshark com o objetivo na identificação de padrões do HTTP Beaconing, incluindo:
 - Requisições HTTP periódicas

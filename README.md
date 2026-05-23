@@ -1,4 +1,4 @@
-# HTTP-Beaconing
+# Análise de Tráfego: Detecção de HTTP Beaconing
 
 Projeto de simulação de tráfego HTTP com comportamento de beaconing utilizando comandos while e curl em ambiente linux.
 

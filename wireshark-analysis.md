@@ -100,12 +100,14 @@ A coluna Bytes mostra que o valor vaixo (15/16 kb) em mais de 100 pacotes, isso 
 - Reutilização de portas Tcp
 - Múltiplas conexões HTTP automatizada
 
-## Conclusão
-O ataque se caracteriza beaconing pois o beaconing é uma conexão periódica da máquina infectada com o servidor esperando um comando.
-
 ## Mitigações
 - bloqueio de ip/domínio
 - Automatizar alertas de siem
+- 
+## Conclusão
+O ataque se caracteriza beaconing pois o beaconing é uma conexão periódica da máquina infectada com o servidor esperando um comando.
+
+
 
 
 
